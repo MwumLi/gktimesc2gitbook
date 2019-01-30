@@ -15,12 +15,12 @@
 
 安装后使用:  
 
-   $ gktimesc2gitbook ./gitbook.json
+	$ gktimesc2gitbook ./gitbook.json
 
 可以使用 `npx` 快速使用:  
 
 	$ npx gktimesc2gitbook ./gitbook.json
-   # 或
+	# 或
 	$ npx github:MwumLi/gktimesc2gitbook ./gitbook.json
 
 
