@@ -1,0 +1,20 @@
+{
+  "name": "gktimesc2gitbook",
+  "version": "1.0.0",
+  "description": "导出极客时间专栏为 gitbook, 然后使用 gitbook 生成电子书",
+  "main": "index.js",
+  "bin": "./bin/gktimesc2gitbook",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "极客时间",
+    "gitbook"
+  ],
+  "author": "MwumLi",
+  "license": "MIT",
+  "dependencies": {
+    "shelljs": "^0.8.3",
+    "turndown": "^5.0.3"
+  }
+}
