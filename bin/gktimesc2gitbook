@@ -1,3 +1,37 @@
 #!/usr/bin/env node
 
-require('../lib');
+const program = require('commander');
+const pkg = require('../package.json');
+const Config = require('../lib/config');
+
+program.on('--help', () => {
+  console.log('\n**注意**: 本脚本只是玩乐之作, 请不要用来作恶👻 , 支持付费阅读 ')
+});
+
+program
+  .version(pkg.version)
+  .description(pkg.description)
+  .usage('[json config file] [options]')
+  .option('--cid <id>', '极客时间专栏 id', '')
+  .option('-c, --cookie <cookie string>', '登录极客时间后浏览器的 cookie, 用于通过购买的专栏认证')
+  .option('-g, --gitbook <dir>', '专栏导出存放目录, 默认当前运行命令的目录下 gitbook/')
+  .option('-r, --rate <ms>', "请求速率控制, 间隔指定 ms 数请求避免服务器认为你正在攻击, 默认 500ms")
+  .option('-d, --debug', '调试模式')
+  .parse(process.argv);
+
+
+if (program.args.length || Config.existsConfig(program)) {
+  let configFile = program.args[0];
+  if (program.config) {
+    configFile = program.config;
+  }
+  
+  const fileConfig = configFile ? Config.readConfig(configFile) : {};
+  const config = Config.parseConfig(fileConfig, program);
+  require('../lib')(config);
+
+} else {
+  program.help();
+}
+
+
