@@ -1,6 +1,6 @@
 {
   "name": "gktimesc2gitbook",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "导出极客时间专栏为 gitbook, 然后使用 gitbook 生成电子书",
   "main": "index.js",
   "bin": "./bin/gktimesc2gitbook",
@@ -14,6 +14,7 @@
   "author": "MwumLi",
   "license": "MIT",
   "dependencies": {
+    "commander": "^3.0.2",
     "shelljs": "^0.8.3",
     "turndown": "^5.0.3"
   }
