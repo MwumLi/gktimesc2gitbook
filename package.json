@@ -13,6 +13,10 @@
   ],
   "author": "MwumLi",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/MwumLi/gktimesc2gitbook.git"
+  },
   "dependencies": {
     "commander": "^3.0.2",
     "shelljs": "^0.8.3",
