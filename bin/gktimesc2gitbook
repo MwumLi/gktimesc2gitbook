@@ -16,6 +16,8 @@ program
   .option('-c, --cookie <cookie string>', '登录极客时间后浏览器的 cookie, 用于通过购买的专栏认证')
   .option('-g, --gitbook <dir>', '专栏导出存放目录, 默认当前运行命令的目录下 gitbook/')
   .option('-r, --rate <ms>', "请求速率控制, 间隔指定 ms 数请求避免服务器认为你正在攻击, 默认 500ms")
+  .option('--retry <retry times>', "触发服务器请求频率限制重试次数，默认1次不重试", 1)
+  .option('--delay <s>', "重试延迟，单位秒，默认10秒", 10)
   .option('-d, --debug', '调试模式')
   .parse(process.argv);
 
