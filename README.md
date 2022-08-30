@@ -6,7 +6,7 @@
 
 ## 注意
 
-**专栏内容存放目录会在每次生成前清空, 请指定一个专门的路径**  
+**专栏内容存放目录会在每次生成前清空, 请指定一个专门的路径用于来导出, 来自 [gktimesc2gitbook/issues/12](https://github.com/MwumLi/gktimesc2gitbook/issues/12)**  
   
 
 ## 运行环境
