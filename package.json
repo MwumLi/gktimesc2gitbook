@@ -20,6 +20,6 @@
   "dependencies": {
     "commander": "^3.0.2",
     "shelljs": "^0.8.3",
-    "turndown": "^5.0.3"
+    "turndown": "^7.1.1"
   }
 }
