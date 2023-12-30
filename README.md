@@ -70,4 +70,8 @@
 * `cookie`: 可选, 用来通过极客时间的用户认证。 如果指定 cookie 或 cookie 失效, 导出的是阉割版的专栏, 因此, 此功能仅为付费用户。  
 * `gitbook`: 可选, 指定导出的专栏内容存放目录。默认为运行命令的当前目录下的 `./gitbook/`  
 * `rate`: 可选, 数字，单位 ms, 默认 500ms, 指定请求速率，避免因为请求太快而被极客时间认为你在攻击它而限制你的请求  
-* `debug`: 可选, boolean, 默认 false, 如果你下载有问题，可以打开此模式，来查看详细的错误，截图上报，方便开发者来定位问题  
+* `debug`: 可选, boolean, 默认 false, 如果你下载有问题，可以打开此模式，来查看详细的错误，截图上报，方便开发者来定位问题
+
+## Star History
+
+[![Star History Chart](https://api.star-history.com/svg?repos=MwumLi/gktimesc2gitbook&type=Date)](https://star-history.com/#MwumLi/gktimesc2gitbook&Date)
